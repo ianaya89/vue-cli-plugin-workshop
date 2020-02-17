@@ -13,8 +13,16 @@ module.exports = (api, options, rootOptions) => {
     })
 
     api.onCreateComplete(() => {
-      fs.unlinkSync(api.resolve('src/assets/logo.svg'));
-      fs.unlinkSync(api.resolve('src/components/HelloWorld.vue'));
+      const logo = 'src/assets/logo.svg'
+      const helloWorld = 'src/components/HelloWorld.vue'
+
+      if (fs.existsSync(logo)) {
+        fs.unlinkSync(api.resolve(logo))
+      }
+
+      if (fs.existsSync(helloWorld)) {
+        fs.unlinkSync(api.resolve(helloWorld))
+      }
     })
   }
 }
