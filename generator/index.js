@@ -13,7 +13,7 @@ module.exports = (api, options, rootOptions) => {
     })
 
     api.onCreateComplete(() => {
-      const logo = 'src/assets/logo.svg'
+      const logo = 'src/assets/logo.png'
       const helloWorld = 'src/components/HelloWorld.vue'
 
       if (fs.existsSync(logo)) {
