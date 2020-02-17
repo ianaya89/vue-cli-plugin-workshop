@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 module.exports = (api, options, rootOptions) => {
   if (options.confirm) {
     api.render('./template', {
@@ -13,6 +15,6 @@ module.exports = (api, options, rootOptions) => {
     api.onCreateComplete(() => {
       fs.unlinkSync(api.resolve('src/assets/logo.svg'));
       fs.unlinkSync(api.resolve('src/components/HelloWorld.vue'));
-    });
+    })
   }
 }
