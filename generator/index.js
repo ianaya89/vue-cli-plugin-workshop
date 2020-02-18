@@ -6,6 +6,20 @@ module.exports = (api, options, rootOptions) => {
       ...options,
     })
 
+    // api.registerCommand(
+    //   'coincap',
+    //   {
+    //     description: 'Generates api file',
+    //     usage: 'vue-cli-service coincap'
+    //   },
+    //   () => {
+    //     const api = 'src/services/logo.png'
+    //     if (!fs.existsSync(logo)) {
+    //       fs.unlinkSync(api.resolve(logo))
+    //     }
+    //   }
+    // )
+
     api.extendPackage({
       dependencies: {
         'whatwg-fetch': '3.0.0'
