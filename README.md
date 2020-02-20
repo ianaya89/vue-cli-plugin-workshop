@@ -1,3 +1,5 @@
 # vue-cli-workshop
 
-> 🖖🔌 Vue CLI Plugin que agrega los archivos necesarios para el workshop basico de Vue.js
+> 🔌💸 Plugin para el proyecto vue-coins del curso de Vue.js para principiantes
+
+> Si te interesa aprender mas de Vue.js podes checar el [workshop](https://github.com/ianaya89/workshop-vuejs), es gratis!
